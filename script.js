@@ -15,8 +15,6 @@ let inputColl = (event) => {
 
   let urL = input.value;
 
-  input.readOnly = true;
-
   let count = 0;
   let fileId = urL.split("/d/")[1]?.split("/")[0];
 
@@ -33,3 +31,4 @@ document.getElementById("f1").addEventListener("submit", inputColl);
 // adas/adad/ada/adad/ad/ad/ad/a/da/d
 
 //
+
