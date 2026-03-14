@@ -1,8 +1,9 @@
 let inputColl = (event) => {
   event.preventDefault();
   let input = document.getElementById("u1");
+  let input2 = document.getElementById("u2");
+  input2.readOnly = true;
   if (!input.checkValidity()) {
-    // built-in URL validation
     input.classList.add("wobble");
 
     setTimeout(() => {
@@ -12,7 +13,6 @@ let inputColl = (event) => {
     return;
   }
 
-  let input2 = document.getElementById("u2");
   let urL = input.value;
 
   input.readOnly = true;
