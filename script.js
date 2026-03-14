@@ -1,9 +1,8 @@
-let input2 = document.getElementById("u2");
-input2.readOnly = true;
+
 let inputColl = (event) => {
   event.preventDefault();
   let input = document.getElementById("u1");
-  
+  let input2 = document.getElementById("u2");
   if (!input.checkValidity()) {
     input.classList.add("wobble");
 
@@ -27,7 +26,7 @@ let inputColl = (event) => {
   }
 
   input2.value = `https://www.googleapis.com/drive/v3/files/${fileId}?alt=media&key=AIzaSyDYQFuXOidJ6Vp_auXLHLPCusTi_d9XCJc`;
-
+  input2.readOnly = true;
 };
 document.getElementById("f1").addEventListener("submit", inputColl);
 
